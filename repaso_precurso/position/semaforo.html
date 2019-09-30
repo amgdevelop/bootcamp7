@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semaforo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .semaforo {
+            margin: 40px auto 0px auto;
+            width: 400px;
+        }
+
+        .semicirculo {
+            background-color: darkgreen;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .cuerpo {
+            height: 400px;
+            width: 300px;
+            background-color: darkgreen;
+            margin: -75px auto 0;
+            padding: 20px;
+        }
+
+        .pata {
+            height: 400px;
+            width: 50px;
+            margin: 0 auto;
+            background-color: darkgreen;
+        }
+
+        .pie {
+            width: 300px;
+            height: 40px;
+            margin: 0 auto;
+            background-color: darkgreen;
+        }
+
+        .cuerpo>div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .cuerpo div:first-child {
+            background-color: red;
+        }
+
+        .cuerpo div:last-child {
+            background-color: lightgreen;
+        }
+
+        .cuerpo div:nth-child(2) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="semaforo">
+        <div class="semicirculo"></div>
+        <div class="cuerpo">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="pata"></div>
+        <div class="pie"></div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

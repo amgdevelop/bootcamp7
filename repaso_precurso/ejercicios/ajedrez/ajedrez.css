@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+#tablero{
+    
+    background-color: white;
+    margin: 40px auto 0 auto;
+      width: 400px;
+   
+}
+
+#tablero .impar, #tablero .par{
+    width: 100%;
+     display: flex;
+    flex-wrap:wrap;
+}
+
+#tablero div{
+    width:50px;
+    height: 50px;
+}
+
+#tablero .par div:nth-child(even){
+    background-color: black;
+}
+
+#tablero .impar div:nth-child(odd){
+    background-color: black;
+}

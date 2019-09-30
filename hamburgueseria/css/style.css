@@ -1,0 +1,237 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Handlee', cursive;
+    rosa: #fa573a;
+    azul; #21242e;
+*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row:after{
+    clear: both;
+    content: "";
+    height: 0;
+    display: block;
+}
+/* inicio header  */
+
+.headersup{
+    background-color: #21242e;
+    padding: 20px 0px;
+}
+
+.headersup a{
+    color: white;
+    text-decoration: none;
+}
+
+header .headersup .container div{
+    float: left;
+    width: 25%;
+     text-align: center;
+}
+
+header .headersup .container div i{
+    color: #fa573a;
+}
+header .headersup .container div a span{
+    display: none;
+}
+
+header nav{
+    padding: 20px 10px;
+}
+
+header nav .logo{
+    max-width: 100px;
+    height: auto;
+    float: left;
+}
+
+header nav .hamburguesa{
+    float: right;
+    cursor: pointer;
+}
+
+header nav .hamburguesa .linea{
+    border-top: 2px solid #aaa;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+header nav ul{
+    padding-top: 60px;
+}
+
+header nav ul li{
+    text-align: center;
+}
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    padding: 15px 0px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+header nav ul li a:hover{
+    color:#fa573a;
+}
+
+header nav ul li a.active{
+    color:#fa573a;
+}
+
+header nav ul li:last-child a{
+    border: 0px;
+}
+
+/* tablet */
+@media (min-width: 37.500em)
+{
+    .headersup{
+        padding: 20px 10px;
+        font-size: 70%;
+    }
+     header .headersup  .container div:nth-child(n)
+    {
+        text-align: left;
+    }
+     header .headersup  .container div:nth-child(n+3)
+    {
+        text-align: right;
+    }
+    header .headersup .container div a span{
+    display: inline-block;
+    }
+    header nav .hamburguesa{
+        float: none;
+        display: none;
+    } 
+
+    header nav ul{
+        float: right;
+        padding-top:  0px;
+    }
+
+    header nav ul li{
+        text-align: left;
+        display: inline-block;
+       
+    }
+
+    header nav ul li a{
+        border-bottom: 0px;
+        padding: 10px 0px 0px 20px;
+    }
+
+
+    
+
+}
+
+/* fin header  */
+
+
+/* inicio hero */
+
+.hero {
+    background-image: url('../images/fondo.jpg');
+    /* height: 70vh; */
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: soft-light;
+    background-color:rgb(60,60,60);
+}
+
+.hero>div{
+    padding: 12% 10px;
+     
+}
+
+.hero>div h1{
+    font-size: 2.75em;
+    color: white;
+    font-family: 'Handlee', cursive;
+}
+
+.hero>div h2{
+    font-size: 1.5em;
+    color:#fa573a;
+    margin: .8em 0;
+}
+
+.hero>div p{
+    color: white;
+}
+
+.boton{
+    background-color: #fa573a;
+    color: white;
+    display: inline-block;
+    padding: .9em;
+    margin: .8em 0;
+    border: 1px solid  #fa573a;
+    text-decoration: none;
+    transition: .7s;
+    -webkit-transform: translateZ(0);
+   
+   
+}
+
+.boton:hover{
+    background-color: transparent;
+    color:  #fa573a;
+}
+
+.hero .social li{
+    display: inline-block;
+}
+
+.hero .social li a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    margin-right: 10px;
+}
+
+
+
+
+/* fin hero */
+
+/* inicio main */
+
+
+
+
+
+
+
+/* fin main */
+
+
+
+
+
+
+
