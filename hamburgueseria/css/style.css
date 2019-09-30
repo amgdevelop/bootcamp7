@@ -8,6 +8,10 @@
     azul; #21242e;
 */
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -214,12 +218,121 @@ header nav ul li:last-child a{
     margin-right: 10px;
 }
 
-
-
+@media (min-width: 37.500em)
+{
+    .hero {
+        height: 70vh;
+    }
+}
 
 /* fin hero */
 
 /* inicio main */
+
+main section{
+    padding: 50px 0px;
+}
+
+main section h2{
+    color: black;
+    font-family: 'Handlee', cursive;
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span{
+    color:#fa573a;
+}
+
+main section .underline{
+    width: 9em;
+    margin: 0 auto;
+    position: relative;
+    color: #fa573a;
+}
+
+main section .underline hr{
+    border-color: #fa573a;
+}
+
+main section .underline span{
+    font-weight: bold;
+    position: absolute;
+    display: block;
+    top: -7px;
+    left: 4.25em;
+}
+
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+main section .flex article{
+    padding: 20px 10px; 
+    border-bottom: 1px solid #444;
+}
+
+main section .flex .icon{
+    color: #fa573a;
+    border: 2px solid #fa573a;
+    padding: 10px;
+    font-size: 150%;
+}
+
+main section article h3{
+    font-weight: 700;
+    margin: 15px 0px;
+    font-size: 120%;
+}
+
+main section article p{
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.fa-truck-moving{
+   
+    transform: rotateY(180deg);
+}
+
+
+main section article .enlace{
+     color: #fa573a;
+     text-decoration: none;
+     font-weight: 700;
+}
+
+main section article .enlace:hover i{
+    transform: translateX(10px);
+    transition: 1s;
+}
+
+
+@media (min-width: 37.500em){
+
+    main section .flex article{
+        width: 50%;
+    }
+
+    main section .flex article:last-child{
+        width: 100%;
+    }
+
+}
+
+
+@media (min-width: 56.250em){
+     main section .flex article{
+        width: 33%;
+    }
+    main section .flex article:last-child{
+        width: 33%;
+    }
+}
+
+
 
 
 
