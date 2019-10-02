@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <script>
+
+        //dado cualquier numero metido por pantalla (2345678) quiero que me saques por pantalla 
+        //el ultimo digito //8
+        // la ultima decena //78
+        // la ultima centena // 678
+
+        var numero = prompt('Dame un numero');
+        numero = parseInt(numero);
+        var ultimoDigito = numero % 10;
+        var ultimaDecena = numero % 100;
+        var ultimaCentena = numero % 1000;
+
+        document.write('El ultimo digito es ' + ultimoDigito + ', la ultima decena es ' + ultimaDecena + ' y la ultima centena es ' + ultimaCentena);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portero de discoteca</title>
+</head>
+
+<body>
+
+    <script>
+
+        // un portero de una discoteca tiene que controlar la entrada, si el usuario es menor de edad no le puede dejar entrar.
+
+
+        var edad = parseInt(prompt('Dame un edad'));
+        console.log(edad);
+        const EDAD_CORTE = 18;
+
+        if (edad > 0 && edad < EDAD_CORTE) {
+            alert('Un vasito de leche y la cama');
+        }
+        else if (edad >= EDAD_CORTE) {
+            alert('Bienvenido');
+        } else {
+            alert('Esa edad no existe')
+        }
+
+    </script>
+
+
+</body>
+
+</html>

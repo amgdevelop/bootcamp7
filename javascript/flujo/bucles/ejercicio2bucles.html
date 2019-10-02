@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 1 bucles</title>
+</head>
+
+<body>
+
+    <script>
+
+        //contar 1000 numeros empezando obligatoriamente por 1 pero solo quiero que aparezcan los pares.
+
+        // for (var i = 0; i <= 1000; i = i + 2) {
+        //     console.log(i);
+        // }
+
+
+
+
+        //que valga tanto para impares como para impares.
+
+
+        var inicial = parseInt(prompt('Valor inicial'));
+        var final = parseInt(prompt('Valor final'));
+        var tipo = prompt('Que quieres par o impar');
+
+        for (var i = inicial; i <= final; i++) {
+
+            if (i % 2 == 0 && tipo == "par") {
+                console.log(i);
+            } else if (i % 2 != 0 && tipo == "impar") {
+                console.log(i);
+            }
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

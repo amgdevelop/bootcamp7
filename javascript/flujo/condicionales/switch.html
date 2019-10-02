@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SWITCH</title>
+</head>
+
+<body>
+
+    <script>
+
+        var color = prompt('Dame el color a traducir');
+
+        //case sensitive
+
+        color = color.toLowerCase(); // toUpperCase();
+
+        switch (color) {
+
+            case 'red':
+            case 'rouge':
+                alert('rojo');
+                break;
+
+            case 'yellow':
+                alert('amarillo');
+                break;
+
+            case 'blue':
+                alert('azul');
+                break;
+
+            default:
+                alert('No tengo la palabra contemplada');
+                break;
+
+
+        }
+
+        // var anioNacimiento = 1992;
+        // var estado = true;
+
+        // switch (estado) {
+
+        //     case (anioNacimiento >= 1980 && anioNacimiento < 1990):
+        //         alert('80');
+        //         break;
+
+        //     case (anioNacimiento >= 1990 && anioNacimiento < 2000):
+        //         alert('90')
+        //         break;
+
+        // }
+
+
+
+    </script>
+
+</body>
+
+</html>
